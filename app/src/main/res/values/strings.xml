@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mvvm_clean_architecture_example</string>
+    <string name="check_internet_connection">Please check your internet connection.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="ok">OK</string>
+</resources>
