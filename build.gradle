@@ -1,0 +1,26 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: 'dependencies.gradle'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$versions.gradleBuildTool"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlinVersion"
+        classpath "io.insert-koin:koin-gradle-plugin:$versions.koinAndroidVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
